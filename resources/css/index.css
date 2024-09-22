@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2f4f4f; /* Dark Slate Gray */
+    color: #f8f8ff; /* Light Beige */
+    padding: 20px; /* Add some padding around the page */
+}
+
+/* Container to align and center content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1,
+header h2 {
+    text-align: left; /* Left-align text */
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin-left: auto; /* Push nav to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Display links horizontally */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: #f8f8ff; /* Light text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Base styles for all h2 elements */
+article h2 {
+    text-align: center; /* Center-align the h2 elements */
+    margin-bottom: 20px; /* Space below h2 */
+    font-size: 1.8rem; /* Adjust font size as needed */
+    color: #f8f8ff; /* Light Beige to match the theme */
+}
+
+/* About Me Section */
+#aboutMe {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.about-content {
+    display: flex; /* Flex container for text and image */
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align image and text to the top */
+}
+
+#aboutMe p {
+    padding-bottom: 20px;
+}
+
+#aboutMe img {
+    padding-left: 20px;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+/* Projects Section */
+#projects {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.project-content {
+    display: flex; /* Flex container for projects */
+    flex-wrap: wrap; /* Allow projects to wrap */
+    gap: 20px; /* Space between project boxes */
+    justify-content: space-around; /* Space between projects */
+}
+
+.project-content div {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: hsla(0, 0%, 0%, 0.30)
+
+}
+/* Languages Section */
+#languages {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.language-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap */
+    gap: 20px; /* Space between images */
+    justify-content: space-between; /* Space between images */
+}
+
+.language-content ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.language-content ul li {
+    flex: 1 1 12%; /* Each image takes up equal space */
+    margin-bottom: 20px; /* Space between rows */
+    display: flex;
+    justify-content: center; /* Center the images */
+}
+
+.language-content ul li img {
+    max-width: 80px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
